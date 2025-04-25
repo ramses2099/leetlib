@@ -12,6 +12,22 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     vec![]
 }
 
+fn two_sum_brute_force(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    let mut arr = Vec::new();
+    let n = nums.len();
+
+    for i in 0..n {
+        for j in (i + 1)..n {
+            if nums[i] + nums[j] == target {
+                arr.push(i as i32);
+                arr.push(j as i32);
+            }
+        }
+    }
+    return arr;
+}
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
