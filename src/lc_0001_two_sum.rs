@@ -27,7 +27,6 @@ fn two_sum_brute_force(nums: Vec<i32>, target: i32) -> Vec<i32> {
     return arr;
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
