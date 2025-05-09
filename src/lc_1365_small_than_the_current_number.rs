@@ -40,3 +40,4 @@ mod tests {
         assert_eq!(smaller_numbers_than_current(nums), outpt);
     }
 }
+ 
